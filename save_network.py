@@ -14,8 +14,8 @@ loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights("mnist_model.h5")
 print("Загрузка сети завершена")
 
-max_review_length = 500
-text = numpy.array(['excellent,fine,superior,wonderful,marvelous,qualified,suited,suitable,proper,capable,generous,kind,friendly,gracious,obliging,pleasant,pleasurable,satisfactory,honorable,reliable,trustworthy,favorable,profitable,advantageous,righteous,expedient,helpful,valid,genuine,ample,salubrious,estimable,beneficial,noble,worthy,top-notch,superb,respectable,edifying'])
+max_review_length = 250
+text = numpy.array(['Скажу честно — ожидала большего! Никаких чувств и эмоций после просмотра особо не было.'])
 #print(text.shape)
 tk = keras.preprocessing.text.Tokenizer(num_words=None, filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~ ', lower=True, split=' ', char_level=False, oov_token=None, document_count=0)
 tk.fit_on_texts(text)
